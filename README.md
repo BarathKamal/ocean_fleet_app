@@ -15,3 +15,7 @@ Defines a Vessel class with attributes, constructors, and getter/setter methods 
 #### Use Case 2: Store Vessel Records Using List
 
 Stores multiple vessel objects in a dynamic List collection using the VesselUtil class, maintaining insertion order and enabling efficient sequential traversal.
+
+#### Use Case 3: Retrieve Vessel by Vessel ID
+
+Retrieves vessel details by searching the vessel list using a unique vessel ID and returns the matching vessel or null if not found.
