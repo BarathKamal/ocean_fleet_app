@@ -19,3 +19,7 @@ Stores multiple vessel objects in a dynamic List collection using the VesselUtil
 #### Use Case 3: Retrieve Vessel by Vessel ID
 
 Retrieves vessel details by searching the vessel list using a unique vessel ID and returns the matching vessel or null if not found.
+
+#### Use Case 4: Identify High-Performance Vessels
+
+Identifies and retrieves all vessels with the highest average speed by finding the maximum speed and filtering matching vessel records.
