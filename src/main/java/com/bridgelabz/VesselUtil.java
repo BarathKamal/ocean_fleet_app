@@ -1,5 +1,6 @@
 package com.bridgelabz;
 
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Iterator;
 
@@ -23,5 +24,28 @@ public class VesselUtil {
             }
         }
         return null;
+    }
+
+    // uc4: identify high-performance vessels
+    // method to get high-performance vessels
+    public List<Vessel> getHighPerformanceVessels(){
+        double maxSpeed = Double.NEGATIVE_INFINITY;
+        List<Vessel> highPerformanceVessels = new ArrayList<>();
+
+        // for-each loop finds the maximum speed
+        for (Vessel vessel: vesselList) {
+            if (vessel.getAverageSpeed() > maxSpeed) {
+                maxSpeed = vessel.getAverageSpeed();
+            }
+        }
+
+        // for-each loop that collects the high performance vessels
+        for (Vessel vessel : vesselList) {
+            if (vessel.getAverageSpeed() == maxSpeed) {
+                highPerformanceVessels.add(vessel);
+            }
+        }
+
+        return highPerformanceVessels;
     }
 }
