@@ -1,9 +1,12 @@
-package com.bridgelabz;
+package com.bridgelabz.utility;
+
+import com.bridgelabz.model.Vessel;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Iterator;
 
+// uc6: refactor using oops
 // uc2: store vessel records using list
 public class VesselUtil {
     private static List<Vessel> vesselList = new ArrayList<>();

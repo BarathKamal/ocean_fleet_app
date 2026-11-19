@@ -1,8 +1,12 @@
-package com.bridgelabz;
+package com.bridgelabz.ui;
+
+import com.bridgelabz.model.Vessel;
+import com.bridgelabz.utility.VesselUtil;
 
 import java.util.List;
 import java.util.Scanner;
 
+//uc6: refactor using oops
 public class UserInterface {
     // method to add vessels
     public static void addVessels(Scanner scanner) {

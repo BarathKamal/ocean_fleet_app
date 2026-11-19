@@ -1,5 +1,6 @@
-package com.bridgelabz;
+package com.bridgelabz.model;
 
+// uc6: refactor using oops
 // uc1: create vessel model
 public class Vessel {
 
