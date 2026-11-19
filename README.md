@@ -27,3 +27,7 @@ Identifies and retrieves all vessels with the highest average speed by finding t
 #### Use Case 5: Integrate User Interaction (Console App)
 
 Integrates console-based user interaction to accept vessel details, store records, retrieve vessels by ID, and display high-performance vessels through menu-driven operations.
+
+#### Use Case 6: Refactor Using OOPS Principles
+
+Refactors the application by separating model, utility, and user interface components into distinct packages, applying encapsulation, abstraction, modularity, and reusability to improve maintainability and scalability.
