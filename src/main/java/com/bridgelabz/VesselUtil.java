@@ -6,16 +6,17 @@ import java.util.Iterator;
 
 // uc2: store vessel records using list
 public class VesselUtil {
-    private List<Vessel> vesselList;
+    private static List<Vessel> vesselList = new ArrayList<>();
 
     // method to add vessel
-    public void addVesselPerformance(Vessel vessel) {
+    public static void addVesselPerformance(Vessel vessel) {
         vesselList.add(vessel);
+        System.out.println("Vessel with id (" + vessel.getVesselId() + ") is added successfully!");
     }
 
     // uc3: retrieve vessel by vessel id
     // method to get vessel by vesselId
-    public Vessel getVesselById(String vesselId) {
+    public static Vessel getVesselById(String vesselId) {
         Iterator<Vessel> iterator = vesselList.iterator();
         while(iterator.hasNext()) {
             Vessel vessel = iterator.next();
@@ -28,7 +29,7 @@ public class VesselUtil {
 
     // uc4: identify high-performance vessels
     // method to get high-performance vessels
-    public List<Vessel> getHighPerformanceVessels(){
+    public static List<Vessel> getHighPerformanceVessels(){
         double maxSpeed = Double.NEGATIVE_INFINITY;
         List<Vessel> highPerformanceVessels = new ArrayList<>();
 
@@ -47,5 +48,14 @@ public class VesselUtil {
         }
 
         return highPerformanceVessels;
+    }
+
+    public static void displayVesselDetails(Vessel vessel) {
+
+        System.out.println(vessel.getVesselId() + " | "
+        + vessel.getVesselName() + " | "
+        + String.valueOf(vessel.getVesselId()) + " | "
+        + vessel.getVesselType());
+
     }
 }
