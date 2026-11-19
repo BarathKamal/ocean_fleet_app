@@ -23,3 +23,7 @@ Retrieves vessel details by searching the vessel list using a unique vessel ID a
 #### Use Case 4: Identify High-Performance Vessels
 
 Identifies and retrieves all vessels with the highest average speed by finding the maximum speed and filtering matching vessel records.
+
+#### Use Case 5: Integrate User Interaction (Console App)
+
+Integrates console-based user interaction to accept vessel details, store records, retrieve vessels by ID, and display high-performance vessels through menu-driven operations.
